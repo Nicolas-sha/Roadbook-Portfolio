@@ -221,20 +221,21 @@ header h1 {
 /* Section Hero */
 .hero-section {
     position: relative;
-    margin-top: 200px;
+    margin-top: 220px;
     width: 100%;
-    padding: 40px 60px;
+    padding: 40px min(6vw, 60px);
     z-index: 10;
     display: flex;
     align-items: flex-start;
     gap: 60px;
     background: none;
+    flex-wrap: wrap;
 }
 
 .hero-image {
     flex: 0 0 auto;
-    width: 300px;
-    height: 300px;
+    width: min(300px, 45vw);
+    height: min(300px, 45vw);
     border-radius: 50%;
     padding: 8px;
     background: linear-gradient(135deg, #D8931C, #F3BA10, #E8AD2E);
@@ -266,6 +267,7 @@ header h1 {
     flex-direction: column;
     justify-content: space-between;
     min-height: 400px;
+    min-width: 280px;
     opacity: 0;
     animation: heroTextIntro 0.95s var(--reveal-ease) forwards;
     animation-delay: 0.35s;
@@ -375,9 +377,10 @@ header h1 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 80px;
-    padding: 0 40px;
+    gap: clamp(32px, 6vw, 80px);
+    padding: 0 min(6vw, 40px);
     z-index: 5;
+    flex-wrap: wrap;
 }
 
 .project-1-container {
@@ -397,8 +400,8 @@ header h1 {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 500px;
-    width: 500px;
+    width: min(500px, 100%);
+    flex: 1 1 320px;
 }
 
 .project-1-description,
@@ -457,8 +460,7 @@ header h1 {
 .project-2-rectangle,
 .project-3-rectangle,
 .project-4-rectangle {
-    width: 800px;
-    height: 450px;
+    width: min(800px, 100%);
     border: 2px solid #000;
     border-radius: 20px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
@@ -466,6 +468,8 @@ header h1 {
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.35),
         inset 0 0 30px rgba(0, 0, 0, 0.25);
+    aspect-ratio: 16 / 9;
+    flex: 1 1 420px;
 }
 
 .project-video-iframe {
@@ -474,6 +478,7 @@ header h1 {
     border: none;
     border-radius: inherit;
     background: #000;
+    display: block;
 }
 /* Project-specific text styles */
 .project-1-text {
@@ -592,8 +597,8 @@ header h1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 60px;
-    padding: 50px;
+    gap: clamp(32px, 6vw, 60px);
+    padding: clamp(32px, 5vw, 50px);
     border-radius: 32px;
     border: 2px solid rgba(0, 0, 0, 0.4);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(216, 147, 28, 0.09));
@@ -601,6 +606,7 @@ header h1 {
         0 20px 40px rgba(0, 0, 0, 0.35),
         inset 0 0 30px rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(6px);
+    flex-wrap: wrap;
 }
 
 .connect-social-column {
@@ -807,14 +813,16 @@ header h1 {
 @media (max-width: 1024px) {
     .hero-section {
         flex-direction: column;
-        top: 180px;
-        padding: 30px 40px;
+        margin-top: 260px;
+        padding: 30px 30px;
         gap: 40px;
+        align-items: center;
+        text-align: center;
     }
     
     .hero-image {
-        width: 250px;
-        height: 250px;
+        width: min(240px, 60vw);
+        height: min(240px, 60vw);
     }
     
     .welcome-greeting {
@@ -844,10 +852,38 @@ header h1 {
     .hero-text h1.projects-title {
         font-size: 4rem;
         text-align: center;
+        margin: 60px auto 0;
     }
     
     .hero-text {
         min-height: 350px;
+    }
+
+    .project-1-container,
+    .project-2-container,
+    .project-3-container,
+    .project-4-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-1-content,
+    .project-2-content,
+    .project-3-content,
+    .project-4-content {
+        align-items: center;
+    }
+
+    .project-1-title,
+    .project-2-title,
+    .project-3-title,
+    .project-4-title {
+        margin-left: 0;
+    }
+
+    .project-4-title {
+        margin-left: 0;
     }
 
     .lets-connect-content {
@@ -870,14 +906,16 @@ header h1 {
     }
     
     .hero-section {
-        top: 150px;
+        margin-top: 300px;
         padding: 20px;
         gap: 30px;
+        align-items: center;
+        text-align: center;
     }
     
     .hero-image {
-        width: 200px;
-        height: 200px;
+        width: min(200px, 60vw);
+        height: min(200px, 60vw);
     }
     
     .welcome-greeting {
@@ -906,6 +944,8 @@ header h1 {
     
     .hero-text h1.projects-title {
         font-size: 3rem;
+        text-align: center;
+        margin: 50px auto 0;
     }
     
     .hero-text {
@@ -926,7 +966,21 @@ header h1 {
 
     .example-2 {
         flex-wrap: wrap;
-        row-gap: 0.5rem;
+        row-gap: 1rem;
+    }
+
+    .project-1-container,
+    .project-2-container,
+    .project-3-container,
+    .project-4-container {
+        padding: 0 20px;
+    }
+
+    .project-1-rectangle,
+    .project-2-rectangle,
+    .project-3-rectangle,
+    .project-4-rectangle {
+        width: 100%;
     }
 }
 
