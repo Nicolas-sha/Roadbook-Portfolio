@@ -559,11 +559,69 @@ header h1 {
         1px 1px 0px rgba(0, 0, 0, 0.5),
         2px 2px 4px rgba(0, 0, 0, 0.4),
         0 0 3px rgba(26, 13, 0, 0.9);
-    margin: 200px 0 0;
+    margin: 200px 0 60px;
     letter-spacing: 2px;
     line-height: 1.2;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
     z-index: 5;
+}
+
+/* Section Skills Content */
+.skills-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 min(6vw, 60px);
+    display: flex;
+    gap: clamp(24px, 4vw, 60px);
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.skills-column {
+    flex: 1 1 280px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skills-column-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #1a0d00;
+    text-shadow: 
+        1px 1px 0px rgba(0, 0, 0, 0.5),
+        2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skills-list li {
+    font-family: 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #2a1a0a;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Let's Connect */
@@ -886,6 +944,28 @@ header h1 {
         margin-left: 0;
     }
 
+    .skills-content {
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .skills-column {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .skills-column-title {
+        font-size: 2.2rem;
+    }
+
+    .skills-list li {
+        font-size: 1rem;
+    }
+
     .lets-connect-content {
         flex-direction: column;
         padding: 40px 30px;
@@ -950,6 +1030,30 @@ header h1 {
     
     .hero-text {
         min-height: 300px;
+    }
+
+    .skills-title {
+        font-size: 3.5rem;
+        margin: 150px 0 40px;
+    }
+
+    .skills-content {
+        padding: 0 20px;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+
+    .skills-column {
+        max-width: 100%;
+    }
+
+    .skills-column-title {
+        font-size: 1.9rem;
+    }
+
+    .skills-list li {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .connect-title {
