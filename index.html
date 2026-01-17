@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Shahata - Roadbook Portfolio</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23A67B5B%22/><text x=%2250%22 y=%2265%22 font-family=%22Cinzel,serif%22 font-size=%2260%22 font-weight=%22700%22 fill=%22%23F5F0E8%22 text-anchor=%22middle%22>N</text></svg>">
-    
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23A67B5B%22/><text x=%2250%22 y=%2265%22 font-family=%22Cinzel,serif%22 font-size=%2260%22 font-weight=%22700%22 fill=%22%23F5F0E8%22 text-anchor=%22middle%22>N</text></svg>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css?v=36">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=37">
+
+    <!-- Cloudinary Video Player -->
+    <link href="https://unpkg.com/cloudinary-video-player@2.0.3/dist/cld-video-player.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/cloudinary-video-player@2.0.3/dist/cld-video-player.min.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Hero Fullscreen Section -->
     <section id="hero" class="hero-fullscreen">
         <div class="hero-overlay"></div>
-        
+
         <!-- Large profile image on the right -->
         <div class="hero-image">
-            <img src="image-background/20251028_1728_Portrait_Inspir%C3%A9_Ghibli_remix_01k8ntar3cewsttpba2y01tgkj-removebg-preview.png" alt="Nicolas Shahata">
+            <img src="image-background/20251028_1728_Portrait_Inspir%C3%A9_Ghibli_remix_01k8ntar3cewsttpba2y01tgkj-removebg-preview.png"
+                alt="Nicolas Shahata">
         </div>
-        
+
         <!-- Content on the left -->
         <div class="hero-content">
             <div class="hero-text-wrapper">
@@ -36,29 +46,34 @@
             </div>
         </div>
     </section>
-    
+
     <!-- About / Journey Section -->
     <section id="about" class="about-section">
         <!-- Animated cars -->
         <div class="scroll-cars">
             <img src="image-background/image.png" alt="Car 1" class="scroll-car scroll-car-left-1" data-speed="0.5">
-            <img src="image-background/image%20copy.png" alt="Car 2" class="scroll-car scroll-car-left-2" data-speed="0.7">
-            <img src="image-background/image%20copy%202.png" alt="Car 3" class="scroll-car scroll-car-right-1" data-speed="0.6">
-            <img src="image-background/image%20copy%203.png" alt="Car 4" class="scroll-car scroll-car-right-2" data-speed="0.8">
-    </div>
-    
+            <img src="image-background/image%20copy.png" alt="Car 2" class="scroll-car scroll-car-left-2"
+                data-speed="0.7">
+            <img src="image-background/image%20copy%202.png" alt="Car 3" class="scroll-car scroll-car-right-1"
+                data-speed="0.6">
+            <img src="image-background/image%20copy%203.png" alt="Car 4" class="scroll-car scroll-car-right-2"
+                data-speed="0.8">
+        </div>
+
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">Welcome, explorer.</p>
                     <p class="about-description">
-                        I'm <strong>Nicolas Shahata</strong>, navigating the world of <span class="highlight">Data, AI and Automation</span> to solve real business challenges.
+                        I'm <strong>Nicolas Shahata</strong>, navigating the world of <span class="highlight">Data, AI
+                            and Automation</span> to solve real business challenges.
                     </p>
                     <p class="about-mission">
-                        This roadbook gathers the key projects and skills forged along my journey — from technical implementations to creative problem-solving.
+                        This roadbook gathers the key projects and skills forged along my journey — from technical
+                        implementations to creative problem-solving.
                     </p>
-        </div>
+                </div>
             </div>
         </div>
     </section>
@@ -67,115 +82,66 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            
+
             <div class="projects-grid">
-                
                 <!-- Project 1 -->
                 <article class="project-card">
                     <div class="project-visual">
-                        <div class="video-container">
-                            <video class="project-video" preload="auto">
-                                <source src="https://res.cloudinary.com/df2vkglqk/video/upload/BDD_dashboard_loom_copie_mzr03o.mp4" type="video/mp4">
-                            </video>
-                            <button class="video-play-btn" aria-label="Play video">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="40" cy="40" r="40" fill="rgba(62, 39, 35, 0.8)"/>
-                                    <path d="M32 25L55 40L32 55V25Z" fill="white"/>
-                                </svg>
-                            </button>
-                            <button class="video-fullscreen-btn" aria-label="Fullscreen" title="Plein écran">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="white"/>
-                                </svg>
-                            </button>
-                            <div class="video-progress-bar">
-                                <div class="video-progress-filled"></div>
-                            </div>
-                        </div>
+                        <div class="video-container" id="video-player-1"></div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">From Data to Decisions</h3>
                         <p class="project-description">
-                            This <strong>Looker Studio dashboard</strong> was built to provide fast, visual insights for better decision-making. The video explains the structure, the metrics that matter, and how this dashboard drives operational and strategic impact.
+                            This <strong>Looker Studio dashboard</strong> was built to provide fast, visual insights for
+                            better decision-making. The video explains the structure, the metrics that matter, and how
+                            this dashboard drives operational and strategic impact.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Looker Studio</span>
                             <span class="tag">Data Viz</span>
                             <span class="tag">Analytics</span>
-        </div>
-    </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- Project 2 -->
                 <article class="project-card">
                     <div class="project-visual">
-                        <div class="video-container">
-                            <video class="project-video" preload="auto">
-                                <source src="https://res.cloudinary.com/df2vkglqk/video/upload/Rag_syste%CC%80me_copie_mdoubp.mp4" type="video/mp4">
-                            </video>
-                            <button class="video-play-btn" aria-label="Play video">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="40" cy="40" r="40" fill="rgba(62, 39, 35, 0.8)"/>
-                                    <path d="M32 25L55 40L32 55V25Z" fill="white"/>
-                                </svg>
-                            </button>
-                            <button class="video-fullscreen-btn" aria-label="Fullscreen" title="Plein écran">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="white"/>
-                                </svg>
-                            </button>
-                            <div class="video-progress-bar">
-                                <div class="video-progress-filled"></div>
-                            </div>
-                        </div>
+                        <div class="video-container" id="video-player-2"></div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Answering System</h3>
                         <p class="project-description">
-                            This project explores how <strong>embeddings and vector search</strong> can support RFP and client questionnaire responses. The RAG pipeline retrieves relevant knowledge from internal sources and assists in writing accurate, context-aware answers.
+                            This project explores how <strong>embeddings and vector search</strong> can support RFP and
+                            client questionnaire responses. The RAG pipeline retrieves relevant knowledge from internal
+                            sources and assists in writing accurate, context-aware answers.
                         </p>
                         <div class="project-tags">
                             <span class="tag">RAG</span>
                             <span class="tag">AI</span>
                             <span class="tag">NLP</span>
-            </div>
-        </div>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- Project 3 -->
                 <article class="project-card">
                     <div class="project-visual">
-                        <div class="video-container">
-                            <video class="project-video" preload="metadata">
-                                <source src="https://res.cloudinary.com/df2vkglqk/video/upload/AB_Testing_copie_fbdpne.mp4" type="video/mp4">
-                            </video>
-                            <button class="video-play-btn" aria-label="Play video">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="40" cy="40" r="40" fill="rgba(62, 39, 35, 0.8)"/>
-                                    <path d="M32 25L55 40L32 55V25Z" fill="white"/>
-                                </svg>
-                            </button>
-                            <button class="video-fullscreen-btn" aria-label="Fullscreen" title="Plein écran">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="white"/>
-                                </svg>
-                            </button>
-                            <div class="video-progress-bar">
-                                <div class="video-progress-filled"></div>
-                            </div>
-                        </div>
+                        <div class="video-container" id="video-player-3"></div>
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Automated A/B Prospecting Flow</h3>
                         <p class="project-description">
-                            An automation connected to our CRM and powered by <strong>Make</strong>, sending prospecting emails through two different paths to run A/B testing and find the best-performing message. It speeds up outreach and reduces manual work.
+                            An automation connected to our CRM and powered by <strong>Make</strong>, sending prospecting
+                            emails through two different paths to run A/B testing and find the best-performing message.
+                            It speeds up outreach and reduces manual work.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Automation</span>
                             <span class="tag">Make</span>
                             <span class="tag">A/B Testing</span>
-        </div>
-    </div>
+                        </div>
+                    </div>
                 </article>
 
             </div>
@@ -187,44 +153,44 @@
         <div class="container">
             <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid">
-                
+
                 <div class="skill-category">
                     <h3 class="skill-category-title">Technical Skills</h3>
                     <ul class="skill-list">
-                <li>Data Visualization</li>
-                <li>Prompt Engineering & RAG</li>
-                <li>Workflow Automation</li>
-                <li>A/B Testing</li>
-                <li>CRM Data Management</li>
-                <li>Business Analytics</li>
-                <li>AI for Business Use Cases</li>
-            </ul>
-        </div>
+                        <li>Data Visualization</li>
+                        <li>Prompt Engineering & RAG</li>
+                        <li>Workflow Automation</li>
+                        <li>A/B Testing</li>
+                        <li>CRM Data Management</li>
+                        <li>Business Analytics</li>
+                        <li>AI for Business Use Cases</li>
+                    </ul>
+                </div>
 
                 <div class="skill-category">
                     <h3 class="skill-category-title">Soft Skills</h3>
                     <ul class="skill-list">
-                <li>Project Management</li>
-                <li>Problem Solving</li>
-                <li>Analytical Thinking</li>
-                <li>Communication</li>
-                <li>Team Collaboration</li>
-                <li>Adaptability</li>
-                <li>Creativity & Innovation</li>
-            </ul>
-        </div>
+                        <li>Project Management</li>
+                        <li>Problem Solving</li>
+                        <li>Analytical Thinking</li>
+                        <li>Communication</li>
+                        <li>Team Collaboration</li>
+                        <li>Adaptability</li>
+                        <li>Creativity & Innovation</li>
+                    </ul>
+                </div>
 
                 <div class="skill-category">
                     <h3 class="skill-category-title">Tools & Platforms</h3>
                     <ul class="skill-list">
-                <li>Looker Studio</li>
-                <li>Google Sheets</li>
-                <li>Make (Integromat)</li>
-                <li>JavaScript</li>
-                <li>Tableau</li>
-                <li>Cursor</li>
-                <li>n8n</li>
-            </ul>
+                        <li>Looker Studio</li>
+                        <li>Google Sheets</li>
+                        <li>Make (Integromat)</li>
+                        <li>JavaScript</li>
+                        <li>Tableau</li>
+                        <li>Cursor</li>
+                        <li>n8n</li>
+                    </ul>
                 </div>
 
             </div>
@@ -239,12 +205,15 @@
                 <div class="story-text">
                     <h3 class="story-heading">4L Trophy: More Than a Rally</h3>
                     <p class="story-description">
-                        In 2024, I took on one of the most challenging adventures of my life: the <strong>4L Trophy</strong>. 
-                        A 6,000 km humanitarian rally through the Moroccan desert, driving a Renault 4L packed with school supplies for children in need.
+                        In 2024, I took on one of the most challenging adventures of my life: the <strong>4L
+                            Trophy</strong>.
+                        A 6,000 km humanitarian rally through the Moroccan desert, driving a Renault 4L packed with
+                        school supplies for children in need.
                     </p>
                     <p class="story-description">
-                        This experience taught me resilience, teamwork, and the power of purpose-driven projects. 
-                        It shaped my approach to problem-solving — navigating uncertainty, adapting to challenges, and always keeping the mission in focus.
+                        This experience taught me resilience, teamwork, and the power of purpose-driven projects.
+                        It shaped my approach to problem-solving — navigating uncertainty, adapting to challenges, and
+                        always keeping the mission in focus.
                     </p>
                 </div>
                 <div class="story-gallery">
@@ -256,28 +225,43 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section / Footer -->
     <footer id="contact" class="contact-footer">
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
-                
+
                 <div class="contact-info">
                     <p class="contact-intro">Ready to collaborate or just want to say hi?</p>
-                <div class="social-links">
-                        <a href="https://www.linkedin.com/in/nicolas-shahata-2595a8328/" target="_blank" rel="noopener" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.941v5.665H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.603 0 4.268 2.371 4.268 5.455v6.288zM5.337 7.433a2.062 2.062 0 112.062-2.062 2.063 2.063 0 01-2.062 2.062zM6.96 20.452H3.713V9H6.96zM22.225 0H1.771A1.77 1.77 0 000 1.771v20.452A1.77 1.77 0 001.771 24h20.452A1.77 1.77 0 0024 22.223V1.771A1.77 1.77 0 0022.225 0z"/>
-                                </svg>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/nicolas-shahata-2595a8328/" target="_blank" rel="noopener"
+                            class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                height="24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.941v5.665H9.351V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.37-1.852 3.603 0 4.268 2.371 4.268 5.455v6.288zM5.337 7.433a2.062 2.062 0 112.062-2.062 2.063 2.063 0 01-2.062 2.062zM6.96 20.452H3.713V9H6.96zM22.225 0H1.771A1.77 1.77 0 000 1.771v20.452A1.77 1.77 0 001.771 24h20.452A1.77 1.77 0 0024 22.223V1.771A1.77 1.77 0 0022.225 0z" />
+                            </svg>
                             LinkedIn
                         </a>
                         <a href="https://github.com/Nicolas-sha" target="_blank" rel="noopener" class="social-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                    <path d="M12 0a12 12 0 00-3.792 23.406c.6.111.82-.261.82-.58 0-.286-.011-1.244-.017-2.256-3.338.726-4.043-1.609-4.043-1.609A3.181 3.181 0 003.422 17.9c-1.09-.745.083-.73.083-.73a2.519 2.519 0 011.836 1.234 2.553 2.553 0 003.484.997 2.563 2.563 0 01.764-1.607c-2.665-.304-5.467-1.333-5.467-5.932a4.646 4.646 0 011.237-3.221 4.316 4.316 0 01.117-3.176s1.006-.322 3.3 1.23a11.37 11.37 0 016.012 0c2.291-1.552 3.295-1.23 3.295-1.23a4.313 4.313 0 01.117 3.176 4.637 4.637 0 011.235 3.221c0 4.61-2.807 5.624-5.48 5.921a2.862 2.862 0 01.817 2.219c0 1.6-.015 2.887-.015 3.282 0 .322.216.697.825.578A12 12 0 0012 0z"/>
-                                </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                height="24">
+                                <path
+                                    d="M12 0a12 12 0 00-3.792 23.406c.6.111.82-.261.82-.58 0-.286-.011-1.244-.017-2.256-3.338.726-4.043-1.609-4.043-1.609A3.181 3.181 0 003.422 17.9c-1.09-.745.083-.73.083-.73a2.519 2.519 0 011.836 1.234 2.553 2.553 0 003.484.997 2.563 2.563 0 01.764-1.607c-2.665-.304-5.467-1.333-5.467-5.932a4.646 4.646 0 011.237-3.221 4.316 4.316 0 01.117-3.176s1.006-.322 3.3 1.23a11.37 11.37 0 016.012 0c2.291-1.552 3.295-1.23 3.295-1.23a4.313 4.313 0 01.117 3.176 4.637 4.637 0 011.235 3.221c0 4.61-2.807 5.624-5.48 5.921a2.862 2.862 0 01.817 2.219c0 1.6-.015 2.887-.015 3.282 0 .322.216.697.825.578A12 12 0 0012 0z" />
+                            </svg>
                             GitHub
-                            </a>
+                        </a>
+
+                        <!-- CV Download Button -->
+                        <a href="image-background/CV Nicolas Shahata.docx.pdf" download="CV_Nicolas_Shahata.pdf"
+                            class="social-link cv-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24"
+                                height="24">
+                                <path d="M12 16L7 11H10V4H14V11H17L12 16ZM20 18V20H4V18H20Z" />
+                            </svg>
+                            Download CV
+                        </a>
                     </div>
                 </div>
 
@@ -285,21 +269,23 @@
                     <form class="contact-form" action="https://formspree.io/f/mgvrgano" method="POST">
                         <input type="text" name="firstname" placeholder="Your name" class="form-input" required>
                         <input type="email" name="email" placeholder="Your email" class="form-input" required>
-                        <textarea name="message" placeholder="Your message" class="form-textarea" rows="4" required></textarea>
+                        <textarea name="message" placeholder="Your message" class="form-textarea" rows="4"
+                            required></textarea>
                         <button type="submit" class="form-button">Send Message</button>
                     </form>
-            </div>
+                </div>
 
             </div>
             <p class="footer-credit">© 2025 Nicolas Shahata. Built with passion.</p>
         </div>
     </footer>
-    
+
     <script src="js/scroll-animations.js?v=2" defer></script>
     <script src="js/typing-effect.js?v=1" defer></script>
     <script src="js/scroll-cars.js?v=10" defer></script>
     <script src="js/form-handler.js?v=3" defer></script>
     <script src="js/cloudinary-gallery.js?v=3" defer></script>
-    <script src="js/project-video.js?v=1" defer></script>
+    <script src="js/cloudinary-video-player.js?v=2" defer></script>
 </body>
+
 </html>

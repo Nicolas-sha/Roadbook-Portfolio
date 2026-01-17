@@ -189,6 +189,7 @@ body {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 0.85;
         transform: translateX(0);
@@ -200,6 +201,7 @@ body {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -208,9 +210,10 @@ body {
 
 @keyframes fadeSlideRight {
     from {
-    opacity: 0;
+        opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -222,6 +225,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -232,17 +236,22 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @keyframes blink {
-    0%, 49% {
-    opacity: 1;
+
+    0%,
+    49% {
+        opacity: 1;
     }
-    50%, 100% {
-    opacity: 0;
+
+    50%,
+    100% {
+        opacity: 0;
     }
 }
 
@@ -252,11 +261,10 @@ body {
 
 .about-section {
     padding: 120px 0;
-    background: linear-gradient(to bottom, 
-        rgba(210, 180, 140, 0.3) 0%,
-        rgba(210, 180, 140, 0.15) 50%,
-        var(--sand-light) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(210, 180, 140, 0.3) 0%,
+            rgba(210, 180, 140, 0.15) 50%,
+            var(--sand-light) 100%);
     position: relative;
     overflow: visible;
 }
@@ -316,7 +324,7 @@ body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 10;
+    z-index: 1;
 }
 
 .scroll-car {
@@ -349,6 +357,13 @@ body {
 .scroll-car-right-2 {
     right: 8%;
     top: 35%;
+}
+
+@media (max-width: 768px) {
+    .scroll-cars {
+        opacity: 0.25 !important;
+        /* Make cars very subtle on mobile */
+    }
 }
 
 /* Container needs higher z-index to be above cars */
@@ -410,7 +425,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: 
+    background:
         radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 70% 50%, rgba(0, 0, 0, 0.1) 0%, transparent 50%);
 }
@@ -880,13 +895,13 @@ body {
 
 .social-links {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     gap: 20px;
 }
 
 .social-link {
     display: inline-flex;
-        align-items: center;
+    align-items: center;
     gap: 12px;
     padding: 15px 25px;
     background: rgba(255, 255, 255, 0.1);
@@ -906,6 +921,20 @@ body {
 .social-link svg {
     width: 24px;
     height: 24px;
+}
+
+.cv-button {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+}
+
+.cv-button:hover {
+    background: #6B8E23;
+    /* Olive green for CV */
+    transform: translateX(5px);
+    border-color: #6B8E23;
 }
 
 .contact-form {
@@ -983,7 +1012,7 @@ body {
     background: rgba(62, 39, 35, 0.75);
     backdrop-filter: blur(4px);
     display: flex;
-        align-items: center;
+    align-items: center;
     justify-content: center;
     z-index: 9999;
     padding: 20px;
@@ -997,8 +1026,8 @@ body {
     border-radius: 20px;
     padding: 50px 40px;
     max-width: 500px;
-        width: 100%;
-        text-align: center;
+    width: 100%;
+    text-align: center;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
     position: relative;
 }
@@ -1045,9 +1074,11 @@ body {
         opacity: 0;
         transform: scale(0.7);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         opacity: 1;
         transform: scale(1);
@@ -1059,6 +1090,7 @@ body {
         opacity: 1;
         transform: scale(1);
     }
+
     100% {
         opacity: 0;
         transform: scale(0.9);
@@ -1079,26 +1111,26 @@ body {
         padding: 40px 30px;
         max-width: 90%;
     }
-    
+
     .popup-icon {
         font-size: 3rem;
     }
-    
+
     .popup-title {
         font-size: 1.6rem;
     }
-    
+
     .popup-text {
         font-size: 1rem;
     }
 }
 
 .footer-credit {
-        text-align: center;
+    text-align: center;
     padding-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--sand-medium);
-        font-size: 0.95rem;
+    font-size: 0.95rem;
 }
 
 /* ===========================
@@ -1117,13 +1149,13 @@ body {
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .hero-image {
         width: 100%;
         height: 50%;
         opacity: 0.6;
     }
-    
+
     .hero-content {
         max-width: 100%;
         text-align: center;
@@ -1144,11 +1176,11 @@ body {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .story-gallery {
         gap: 20px;
     }
-    
+
     .story-image-placeholder {
         height: 250px;
     }
@@ -1164,6 +1196,7 @@ body {
 }
 
 @media (max-width: 640px) {
+
     .about-section,
     .projects-section,
     .skills-section,
@@ -1188,4 +1221,39 @@ body {
         bottom: 20px;
     }
 
+}
+
+/* Cloudinary Video Player Styles */
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.video-container .cld-video-player {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 12px;
+}
+
+.video-container video {
+    border-radius: 12px;
+}
+
+/* Override Cloudinary player colors to match theme */
+.vjs-control-bar {
+    background: rgba(62, 39, 35, 0.9) !important;
+}
+
+.vjs-play-progress,
+.vjs-volume-level {
+    background: #A67B5B !important;
+}
+
+.vjs-big-play-button {
+    background: rgba(62, 39, 35, 0.8) !important;
+    border: none !important;
+    border-radius: 50% !important;
 }
